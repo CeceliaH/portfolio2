@@ -8,6 +8,8 @@ body, html{
 
 }
 
+/*COVER*/
+
 .textleft{
 	color:#2980A6;
 	font-size: 48px;
@@ -69,9 +71,9 @@ body, html{
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
-	align-items: flex-end;
+	align-items: flex-start;
 	margin:10px;
-	line-height: 200px;
+	line-height: 0px;
 }
 
 .border{
@@ -99,6 +101,113 @@ a:hover{
   color:#C13232;
   text-decoration: none;
   transition: 0.5s;
+}
+
+/*WORKS*/
+
+#workcolumns{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	height:100%;
+}
+
+.workcolumsnlefttext{
+	color:#2980A6;
+	background-color:#EEEAEA;
+	margin: 10px;
+   	padding-left: 170px;
+   	padding-right: 180px;
+   	padding-top: 50px;
+   	padding-bottom: 50px;
+   	height: 150%;
+   	font-size: 36px;
+   	text-decoration: underline;
+	text-decoration-style: wavy;
+  	text-decoration-color: #C13232;
+    box-shadow: 10px 10px;
+
+}
+
+.workcolumsnrighttext{
+	color:#2980A6;
+	background-color:#EEEAEA;
+	margin: 10px;
+   	padding-left: 170px;
+   	padding-right: 170px;
+   	padding-top: 50px;
+   	padding-bottom: 50px;
+   	height: 150%;
+   	font-size: 36px;
+   	text-decoration: underline;
+	text-decoration-style: wavy;
+  	text-decoration-color: #C13232;
+  	box-shadow: 10px 10px;
+}
+
+.workcolumsnleftgrid{
+	display:grid;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: 50% 50%;
+	width: 40vw;
+	position: absolute;
+	top:170px;
+	left:80px;
+
+}
+
+.workcolumsnrightgrid{
+	display:grid;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: 50% 50%;
+	width: 40vw;
+	top:170px;
+	right:70px;
+	position: absolute;
+	grid-row-gap: 30px;
+}
+
+/*.workcolumnsleft{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color:#EEEAEA;
+	margin: 5px;
+   	padding-left: 180px;
+   	padding-right: 180px;
+   	padding-top: 50px;
+   	height: 100%;
+   	box-shadow: 7px 10px #2980A6;
+
+}
+
+.workcolumnsright{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color:#EEEAEA;
+	margin: 5px;
+   	padding-left: 180px;
+   	padding-right: 180px;
+   	padding-top: 50px;
+   	height: 100%;
+   	box-shadow: 7px 10px #2980A6;
+
+}*/
 
 
+img{
+	width:250px;
+	height: auto;
+	border:solid;
+	border-color: #2980A6;
+	border-width: 5px;
+}
 
+img:hover{
+	-webkit-transform: scale(1.7);
+    -ms-transform: scale(1.7);
+    transform: scale(1.7);
+    transition: 0.7s;
+    border-color: #2E2E2E;
+}
